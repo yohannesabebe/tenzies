@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434; 
+    
+}
+.main{
+display: flex;
+padding: 30px 20px 29px 20px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+
+}
+.sub{
+
+   background-color:white;
+   height: 600px;
+   width: 600px;
+   border-radius: 5px;
+   padding: 33.28px 34.56px 33.92px 34.56px;
+}
+.tenzies{
+    color: #3C21C6;
+text-align: center;
+font-family: Karla;
+font-size: 25.6px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.768px;
+}
+.p{
+    color: #4A4E74;
+text-align: center;
+font-family: Inter;
+font-size: 13.107px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.393px;
+}
+.box{
+    height:30px;
+    width:40px;
+    border:1px solid black;
+    display: inline-block;
+    margin: 10px;
+    padding:5px 15px;
+}
