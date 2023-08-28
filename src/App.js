@@ -6,23 +6,36 @@ import values from './values.js'
 import Roll from './components/Roll.js'
 
 export default function App(){
-    const [boxes, setBoxes] = React.useState(values.map(value => value.val))
+    const [boxes, setBoxes] = React.useState(values)
     function randomGenerator(){
         return (
             Math.floor(Math.random() * (10) + 1)
         )
     }
-   
-    
+   function randomize(){
+    setBoxes(prevBox => prevBox.map(obj => {
+        return(
+            {...obj, val:randomGenerator()}
+        )
+    }))
+   }
+//     function toggle(event){
+// console.log(event.target)
+//     }
     
     return (
        <div className='main'>
         <div className='sub'>
             <Text />
             <Box 
-            boxState = {boxes}
+            boxState = {boxes.map(i => i.val)}
+            // handleClick={toggle}
+            // id = {boxes.map(i=>i.id)}
+            // key ={boxes.map(i=>i.id)}
             />
-            <Roll />
+            <Roll 
+            handleClick={randomize}
+            />
         </div>
         </div>
     )

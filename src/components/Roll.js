@@ -1,10 +1,13 @@
 import React from "react";
 
 
-export default function Roll (){
-return(<dvi>
-<button>
+export default function Roll (props){
+return(<div>
+<button
+className="roll"
+onClick={props.handleClick}
+>
     Roll
 </button>
-</dvi>)
+</div>)
 }
