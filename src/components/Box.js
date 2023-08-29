@@ -1,20 +1,26 @@
 import React from "react";
 
 export default function Box(props){
+
     return(
         <div className="boxes">
           {
-            
-            props.boxState.map(box => {
-                return(
-                   <div 
+            <div 
                    className="box"
-                  //  onClick={()=>props.handleClick()}
+                   onClick={()=>props.handleClick(props.id)}
                    > 
-                    {box}
+                    {props.boxValue}
                    </div>
-                )
-            })
+            // props.boxState.map(box => {
+            //     return(
+            //        <div 
+            //        className="box"
+            //        onClick={()=>props.handleClick(props.id)}
+            //        > 
+            //         {box}
+            //        </div>
+            //     )
+            // })
           }
          
         </div>

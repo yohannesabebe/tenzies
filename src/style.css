@@ -17,7 +17,6 @@ flex-shrink: 0;
 
 }
 .sub{
-
    background-color:white;
    height: 600px;
    width: 600px;
@@ -43,12 +42,18 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.393px;
+
 }
 .box{
     height:30px;
     width:40px;
-    border:1px solid black;
-    display: inline-block;
+    border: 1px black solid;
     margin: 10px;
-    padding:6px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
 }

@@ -19,20 +19,30 @@ export default function App(){
         )
     }))
    }
-//     function toggle(event){
-// console.log(event.target)
-//     }
-    
+   
+    function freeze(boxId){
+// setBoxes(prevBox => prevBox.map(value => {
+
+//         boxId === value.id ? []:'in else'
+        
+//     return(value)
+// }))
+    console.log(boxId)
+    }
+    let boxVar = boxes.map(value => {
+        return <Box 
+        boxValue = {value.val}
+        handleClick={freeze}
+        id = {value.id}
+        key={value.id}
+
+        />
+    })
     return (
        <div className='main'>
         <div className='sub'>
             <Text />
-            <Box 
-            boxState = {boxes.map(i => i.val)}
-            // handleClick={toggle}
-            // id = {boxes.map(i=>i.id)}
-            // key ={boxes.map(i=>i.id)}
-            />
+          <div className='box-container'> {boxVar}</div>
             <Roll 
             handleClick={randomize}
             />
