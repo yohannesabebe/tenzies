@@ -14,30 +14,28 @@ export default function App(){
     }
    function randomize(){
     setBoxes(prevBox => prevBox.map(obj => {
+        
         return(
-            {...obj, val:randomGenerator()}
+            obj.clicked? obj : {...obj, val:randomGenerator()}
         )
     }))
    }
    
-    function freeze(boxId){
-// setBoxes(prevBox => prevBox.map(value => {
-
-//         boxId === value.id ? []:'in else'
-        
-//     return(value)
-// }))
-    console.log(boxId)
+    function toggle(boxId){
+    setBoxes(prevBox => prevBox.map(value => {
+        return (value.id === boxId? {...value, clicked:!value.clicked}: value)
+    }))
+    
     }
+
     let boxVar = boxes.map(value => {
         return <Box 
         boxValue = {value.val}
-        handleClick={freeze}
+        handleClick={toggle}
         id = {value.id}
         key={value.id}
-
         />
-    })
+    })  
     return (
        <div className='main'>
         <div className='sub'>

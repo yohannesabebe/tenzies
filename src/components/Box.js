@@ -11,16 +11,6 @@ export default function Box(props){
                    > 
                     {props.boxValue}
                    </div>
-            // props.boxState.map(box => {
-            //     return(
-            //        <div 
-            //        className="box"
-            //        onClick={()=>props.handleClick(props.id)}
-            //        > 
-            //         {box}
-            //        </div>
-            //     )
-            // })
           }
          
         </div>

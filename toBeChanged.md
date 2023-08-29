@@ -10,7 +10,7 @@
 <ul> 
 <h1>Function of the app</h1>
 <del>change the numbers when the roll button is pressed</del>
-<li>don't change the numbers of the clicked boxes when the roll is pressed</li>
+<del>don't change the numbers of the clicked boxes when the roll is pressed</del>
 <li>save the state of the numbers even after reload</li>
-<li>add a key</li>
+<del>add a key to each 'box'</del>
 </ul>
