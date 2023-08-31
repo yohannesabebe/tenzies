@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -17,43 +20,80 @@ flex-shrink: 0;
 
 }
 .sub{
-   background-color:white;
+    background: #F5F5F5;
    height: 600px;
    width: 600px;
    border-radius: 5px;
    padding: 33.28px 34.56px 33.92px 34.56px;
 }
 .tenzies{
-    color: #3C21C6;
+color: #3C21C6;
+margin-bottom: 0px;
 text-align: center;
 font-family: Karla;
-font-size: 25.6px;
+font-size: 2rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: -0.768px;
 }
-.p{
-    color: #4A4E74;
+p{
+color: #4A4E74;
 text-align: center;
 font-family: Inter;
-font-size: 13.107px;
+font-size: 1.25rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.393px;
+padding: auto 1.8rem;
 
 }
 .box{
-    height:30px;
-    width:40px;
-    border: 1px black solid;
-    margin: 10px;
+    border: none;
+    width:30px;
+    height:30px;;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:white;
+    padding:1.6rem;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    font-size: 1.4rem;
+    color:#3C21C6;
+    font-weight: 600;
+}
+.boxes{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    width:fit-content;
+    text-align:center;
 }
 .box-container{
+    padding: 1rem;
+    display:grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    justify-content: center;
+    grid-gap: 2rem 0.5rem;
+ 
+}
+.roll-container{
     display: flex;
     justify-content: center;
+    margin-top: 1.3rem;
 }
+.roll{
+    padding:0.67rem 2.4rem;
+    border:none;
+    background-color: #3C21C6;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 94%;
+    border-radius: 6px;
+   
+}
+
