@@ -56,7 +56,6 @@ export default function App(){
     
     const allEqual = arr => arr.every( v => v === arr[0] )
     const win = (allEqual(clickList) && clickList.length === 10) 
-    React.useEffect((() => console.log(win)),[win])
     return (
        <div className='main'>
         <div className='sub'>
