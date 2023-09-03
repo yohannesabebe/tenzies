@@ -5,7 +5,7 @@ import Text from './components/Text.js'
 import values from './values.js'
 import Roll from './components/Roll.js'
 import Reset from './components/Reset'
-
+import Confetti from './components/Confetti'
 
 export default function App(){
     const [boxes, setBoxes] = React.useState(values)
@@ -59,6 +59,7 @@ export default function App(){
     return (
        <div className='main'>
         <div className='sub'>
+          
             <Text />
           <div className='box-container'> {boxVar}</div>
             {!win? <Roll 
@@ -66,6 +67,8 @@ export default function App(){
             />:<Reset 
             handleClick={resetAll}
             />}
+            {win && <Confetti/>}
+            
         </div>
         </div>
     )
